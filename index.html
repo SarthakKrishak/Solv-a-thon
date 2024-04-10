@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VITI-CARE</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="shortcut icon" href="./img-removebg-preview.png" type="image/x-icon">
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet" />
+  <!-- Include GSAP library -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+<!-- Firebase SDK version 8 -->
+<script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
+
+</head>
+<body>
+  <nav>
+    <div class="left">
+      <a href="./index.html"><img src="./img-removebg-preview.png" alt=""></a>
+      <h3>VITI-CARE</h3>
+    </div>
+    <div class="nav_list">
+      <ul>
+        <li><a href="#">How It Works</a></li>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Contact Us</a></li>
+      </ul>
+    </div>
+  </nav>
+  <div class="container">
+    <div class="left">
+      <div class="header">
+        <!-- Add class "hide" to initially hide the elements -->
+        <h2 class="animation a1 hide">Welcome Back</h2>
+        <h4 class="animation a2 hide">Log in to your account using Vit Gmail ID</h4>
+      </div>
+      <div class="form">
+        <button id="google-login-btn" class="animation a6 hide">
+          <i class="ri-google-line"></i>Sign in With Google
+        </button>
+      </div>
+    </div>
+    <div class="right"></div>
+  </div>
+  <!-- Your custom JavaScript code -->
+  <script src="./script.js" defer></script>
+</body>
+</html>

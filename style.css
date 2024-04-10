@@ -1,0 +1,141 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@import url("https://fonts.googleapis.com/css?family=Rubik:400,500&display=swap");
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-family: "Rubik", sans-serif;
+}
+
+nav {
+  border: 1px solid #385a64;
+  width: 100%;
+  height: 9vh;
+  background-color: #385a64;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav .left {
+  padding-left: 100px;
+  color: #fff;
+  display: flex;
+  gap: 18px;
+  text-decoration: none;
+  align-items: center;
+}
+
+nav .left img {
+  text-decoration: none;
+  width: 50px;
+  height: 50px;
+  background-color: #f4735fcc;
+  border: 1px #f4735fcc;
+  border-radius: 17px;
+}
+
+nav .nav_list ul {
+  padding-right: 90px;
+  color: #fff;
+  list-style-type: none;
+  display: flex;
+  gap: 70px;
+}
+
+nav .nav_list ul li {
+  font-size: 15px;
+  transition: all ease-in-out 0.3s; /* Smooth transition effect */
+}
+
+nav .nav_list ul li:hover {
+  text-decoration: underline;
+}
+
+nav .nav_list ul li a {
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.container {
+  display: flex;
+  height: 100vh;
+}
+
+.container .left {
+  padding-left: 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.container .left .header {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding-bottom: 25px;
+  align-items: center;
+}
+
+.container .left .header h2 {
+  margin: 0;
+  font-size: 37px;
+  color: #1a2e37;
+}
+
+.container .left .header h4 {
+  margin-top: 10px;
+  font-weight: normal;
+  font-size: 18px;
+  color: rgba(0, 0, 0, 0.4);
+}
+
+.container .left .form {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.container .left .form button {
+  width: 240px;
+  padding: 12px 30px;
+  border: 0;
+  gap: 5px;
+  display: flex;
+  align-items: center;
+  background-color: #385a64;
+  border-radius: 40px;
+  margin-top: 10px;
+  color: #fff;
+  letter-spacing: 1px;
+  transition: transform 0.3s ease-in-out; /* Smooth scale effect */
+}
+
+.container .left .form button i {
+  font-size: 30px;
+}
+
+.container .left .form button:hover {
+  background-color: #ff735c;
+  transform: scale(1.05); /* Enlarge on hover */
+}
+
+.right {
+  width: 60%;
+  flex: 1;
+  background-image: url("./bgimg.avif");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
