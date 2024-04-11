@@ -71,6 +71,8 @@ nav .nav_list ul li a {
 }
 
 .container .left {
+  background-color: #fff;
+  backdrop-filter: blur(80px);
   padding-left: 60px;
   display: flex;
   flex-direction: column;

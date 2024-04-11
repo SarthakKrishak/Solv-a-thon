@@ -1,4 +1,3 @@
-// Function to animate elements with GSAP
 function animateElements() {
   // Select elements to be animated
   const header = document.querySelector(".header");
@@ -20,9 +19,8 @@ window.onload = function () {
     projectId: "viti-app",
     storageBucket: "viti-app.appspot.com",
     messagingSenderId: "215296459167",
-    appId: "1:215296459167:web:4395efc90c1242e325fdaa"
+    appId: "1:215296459167:web:4395efc90c1242e325fdaa",
   };
-
   // Initialize Firebase
   firebase.initializeApp(firebaseConfig);
 
@@ -42,6 +40,14 @@ window.onload = function () {
         // Handle errors
         console.error("Error signing in with Google:", error);
       });
+
+    // Open authentication popup in a new full-screen window
+    const width = window.screen.width * 0.8;
+    const height = window.screen.height * 0.8;
+    const left = (window.screen.width - width) / 2;
+    const top = (window.screen.height - height) / 2;
+    const options = `width=${width},height=${height},top=${top},left=${left},fullscreen=yes`;
+    window.open("", "GoogleAuthentication", options);
   }
 
   // Event listener for sign-in button

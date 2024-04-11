@@ -15,18 +15,19 @@
             width: 100%;
             font-family: "Rubik", sans-serif;
         }
-        
+
         nav {
             border: 1px solid #385a64;
             width: 100%;
-            height: 9vh; /* Adjusted height */
+            height: 9vh;
+            /* Adjusted height */
             background-color: #385a64;
             display: flex;
             justify-content: space-between;
             align-content: center;
             align-items: center;
         }
-        
+
         nav .left {
             text-align: center;
             padding-left: 95px;
@@ -37,7 +38,7 @@
             align-content: center;
             height: 10vh;
         }
-        
+
         nav .left img {
             align-items: center;
             align-content: center;
@@ -48,7 +49,7 @@
             border: 1px #f4735fcc;
             border-radius: 17px;
         }
-        
+
         nav .left h5 {
             text-align: center;
             font-weight: 700;
@@ -233,7 +234,7 @@
                 console.error("Error fetching data:", error);
             });
         }
-        
+
         function logout() {
             if (confirm("Are you sure you want to logout?")) {
                 signOut(auth).then(() => {
@@ -246,7 +247,7 @@
         document.getElementById("logout-btn").addEventListener("click", logout);
 
         window.onload = GetAllDataOnce;
-        
+
     </script>
 
 </body>
